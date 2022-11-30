@@ -4,13 +4,22 @@
 			"path": "../app"
 		},
 		{
-			"path": "../package"
-		},
-		{
 			"path": "../sandbox"
 		},
 		{
 			"path": "../vscode"
+		},
+		{
+			"path": "../npm"
+		},
+		{
+			"path": "../site"
+		},
+		{
+			"path": "../pro"
+		},
+		{
+			"path": "../assets"
 		}
 	],
 	"settings": {
@@ -20,6 +29,7 @@
 		},
 		"editor.quickSuggestions": {
 			"strings": true
-		}
+		},
+		"editor.tabSize": 4
 	}
 }
