@@ -1,10 +1,25 @@
 {
+	"extensions": {
+		"recommendations": [
+			"kamikillerto.vscode-colorize",
+			"mikestead.dotenv",
+			"tobermory.es6-string-html",
+			"dbaeumer.vscode-eslint",
+			"heybourn.headwind",
+			"zainchen.json",
+			"christian-kohler.path-intellisense",
+			"csstools.postcss",
+			"bradlc.vscode-tailwindcss",
+			"wayou.vscode-todo-highlight",
+			"gruntfuggly.todo-tree"
+		]
+	},
 	"folders": [
 		{
 			"path": "../app"
 		},
 		{
-			"path": "../sandbox"
+			"path": "../dev"
 		},
 		{
 			"path": "../vscode"
@@ -13,7 +28,7 @@
 			"path": "../npm"
 		},
 		{
-			"path": "../site"
+			"path": "../docs"
 		},
 		{
 			"path": "../pro"
