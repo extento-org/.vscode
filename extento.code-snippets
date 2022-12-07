@@ -1,6 +1,7 @@
 {
     "Node FS boilerplate": {
-        "prefix": "nodescript",
+        "scope": "javascript",
+        "prefix": "_scriptfs",
         "body": [
             "const path = require('path');",
             "const fs = require('fs');\n",
@@ -10,5 +11,28 @@
             "$3"
         ],
         "description": "Node boilerplate with fs, path, and working dir already set up"
+    },
+    "Node FS recursive file list": {
+        "scope": "javascript",
+        "prefix": "_listfs",
+        "body": [
+            "const get_files = (dir) => {",
+            "\tlet files = [];",
+            "\tconst items = fs.readdirSync(dir, { withFileTypes: true });\n",
+            "\tfor (const item of items) {",
+            "\t\tif (item.isDirectory()) {",
+            "\t\t\tfiles = [",
+            "\t\t\t\t...files,",
+            "\t\t\t\t...(get_files(`${${dir}}/${item.name}`)),",
+            "\t\t\t];",
+            "\t\t} else {",
+            "\t\t\tfiles.push(`${${dir}}/${item.name}`);",
+            "\t\t}",
+            "\t}\n",
+            "\treturn files;",
+            "};\n",
+            "$1"
+        ],
+        "description": "Writes a function to recursively list all files in a directory."
     }
 }
