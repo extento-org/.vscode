@@ -1,0 +1,14 @@
+{
+    "Node FS boilerplate": {
+        "prefix": "nodescript",
+        "body": [
+            "const path = require('path');",
+            "const fs = require('fs');\n",
+            "const PATH_TO_${1} = path.resolve(__dirname, '$2');\n",
+            "if (!fs.existsSync(PATH_TO_$1)) throw new Error(`${PATH_TO_$1} does not exist.`);\n",
+            "console.log(PATH_TO_$1);",
+            "$3"
+        ],
+        "description": "Node boilerplate with fs, path, and working dir already set up"
+    }
+}
